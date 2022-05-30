@@ -1,0 +1,80 @@
+Style.css
+ul {
+    width :auto
+  }
+
+.conteneur{
+    width: 300px;
+    height: 300px;
+    border: 1px #aaa solid; 
+    text-align: center;
+    border-radius: 10%;
+  }
+ 
+  img {
+    border-radius: 10%
+    border-radius: 70%;
+    width: 70%;
+    margin: 10;
+    padding: 10;
+    color: rgb(8, 8, 27); 
+    float: left;
+    border: dashed red;
+    margin: 10;
+    padding: 10;
+    background-color :rgb(189, 184, 184)
+
+    }
+.test { 
+    font: 'calibri';
+    font-size: xx-large;
+    line-height: 10;
+      color: rgb(8, 8, 27); 
+      float: left;
+      border: dashed red;
+      margin: 10;
+      padding: 10;
+      background-color :rgb(189, 184, 184)
+
+    }
+
+    .conteneur{
+        width: 300px;
+        height: 300px;
+        border: 1px #aaa solid; 
+        text-align: center;
+      }
+      ul {
+        list-style  : none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+      }
+      
+      li {
+        float: left;
+        list-style  : none;
+      }
+      
+      li a {
+        display: block;
+        list-style  : none;
+        color: rgb(100, 99, 99);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: rgb(34, 192, 212);
+        list-style  : none;
+      }
+      
+      li a.active {
+        color: white;
+        list-style  : none;
+        background-color: #4CAF50;
+        text-align: center;
+      }
