@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #d1beaff4;
+}
+
+nav {
+    text-align: center;
+
+    font-size: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+.image {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+li a {
+    display: block;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(235, 126, 63);
+    list-style: none;
+}
+
+li a.active {
+    color: white;
+    list-style: none;
+    background-color: #4CAF50;
+    text-align: center;
+}
+
+.accueil {
+    text-align: center;
+    color: white;
+}
+.parcours {
+    color: rgb(121, 83, 83);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 55%;
+}
+.parcoursgauche {
+    width: 60%;
+    margin-right: 10px;
+}
+.parcoursimage {
+    margin-top: 2%;
+
+    float: center;
+}
+
+.titreetudes {
+    text-align: center;
+    color: white;
+}
+.etudes h1 {
+    text-align: center;
+}
+.etudesecole {
+    margin-left: 23%;
+}
+.ecole {
+    width: 70%;
+    height: 40%;
+    background-color: white;
+    opacity: 0.8;
+    align-items: center;
+    border-radius: 20px;
+}
+.ecole img {
+    margin-left: 43%;
+    width: 15%;
+    height: 20%;
+}
+
+.titreexperiences {
+    text-align: center;
+    color: white;
+}
+.experiences h1 {
+    text-align: center;
+}
+.expcadre {
+    margin-top: 5%;
+    margin-left: 23%;
+}
+.experiencesuniv {
+    width: 70%;
+    height: 40%;
+    background-color: white;
+    opacity: 0.8;
+    align-items: center;
+    border-radius: 20px;
+}
+.experiencesuniv img {
+    margin-left: 43%;
+    width: 10%;
+    height: 20%;
+
+}
+
+.contact {
+    color: white;
+}
+.mail:hover {
+    color: lightblue;
+    font-weight: bold;
+}

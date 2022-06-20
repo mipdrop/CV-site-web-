@@ -1,22 +1,212 @@
-<html>
-<head>
-    <Link rel="stylesheet"href="conteneur.css"/>
-</head>
-<body>
-    <ul>
-        <li><a class="active" href="Pagedepresentation.html">Formation</a></li>
-        <li><a  href="Experience.html">Exp&eacuteriences</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="FORMPHP.html">Modele de NDA</a></li>
-    
-      </ul>
-    <div class=test>Bonjour</div><div class=test>au revoir</div>
-  salut <strong>MOZNA </strong> 
-  <p>Bonjour je m'appelle Yasmine  </p>
-  <p>je suis en licence paralegaltech</p>
-<div class=conteneur>
-  <p><img src="C:\Users\yimou\Downloads\1640681845543.jpg"/></p>
-  </div>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Yasmine IMOULLAS</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#accueil">
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#etudes">
+                            Etudes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experiences">
+                            Expériences
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./NDA.html">
+                            NDA
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1 style="text-align:center">Bonjour et bienvenue sur mon site CV</h1>
+        <img src="C:\Users\yimou\Downloads\1640681845543.jpg" class="image">
 
-</body>
-</html>
+        <div class="accueil" id="accueil"></div>
+        <section class="parcours">
+
+            <div class="parcoursgauche">
+                <h1>Mon parcours</h1>
+                <p>Je m'appelle Yasmine IMOULLAS.</p>
+                <p>
+                    Je suis actuellement un Licence Professionnelle assistante juridique PARALEGAL
+                    TECH à CY PARIS UNIVERSITE et en alternance à la SCP DUCHAUCHOY LAMACHE.
+                </p>
+                <p>
+                    J'ai choisi cette licence en alternance, car d'une part, j'avais une appétence
+                    particulière pour le droit et d'autre part, je recherchais également à avoir une
+                    expérience professionnelle dans le domaine juridique.
+                </p>
+            </div>
+            <div class="parcoursimage">
+                <img
+                    src="images/CERGY.png"
+                    width="300px"
+                    style="border-radius:30px;box-shadow:5px 5px#c49da6;">
+            </div>
+        </section>
+
+        <section class="etudes" id="etudes">
+            <h1 class="titreetudes">Mes études</h1>
+            <div class="etudesecole">
+                <div class="ecole">
+                    <h1>PACES : première année commune aux études de santé</h1>
+                    <h1>De 2014 à 2015</h1>
+                    <img src="images/DIDEROT.jpg" alt="logo université graphiste">
+
+                </div>
+                <div class="ecole">
+                    <h1>Licence de droit</h1>
+                    <h1>De 2016 à 2020</h1>
+                    <img src="images/CERGYLOGO.jpg" alt="logo université graphiste">
+                </div>
+                <div class="ecole">
+                    <h1>Licence Professionnelle PARALEGAL TECH</h1>
+                    <h1>De 2021 à 2022</h1>
+                    <img src="images/PL.jpg" alt="logo université photographe">
+                </div>
+            </section>
+
+            <section class="experiences" id="experiences">
+                <h1 class="titreexperiences">Mes expériences</h1>
+
+                <div class="expcadre">
+                    <div class="experiencesuniv">
+                        <h1>Clerc Gestionnaire chez la SCP DUCHAUCHOY LAMACHE</h1>
+                        <img src="images/HUISSIER.jpg" alt="logo entreprise graphiste">
+                        <h1>Actuellement- depuis 10/2022</h1>
+                    </div>
+                    <div class="experiencesuniv">
+                        <h1>ASSISTANTE D'EDUCATION collège Henri Guillaumet (JOUY LE MOUTIER)</h1>
+                        <img src="images/AED.jpg" alt="logo entreprise photographe">
+                        <h1>De 2020 à 2021</h1>
+                    </div>
+                    <div class="experiencesuniv">
+                        <h1>COURS DE SOUTIEN</h1>
+                        <img src="images/COURS.jpg" alt="logo entreprise photographe">
+                        <h1>De 2018 à 2020</h1>
+                    </div>
+                </section>
+                <footer class="contact" id="contact">
+                    <center>
+                        <form
+                            name="myForm"
+                            action="mailto:yimoullas@gmail.com"
+                            method="post"
+                            enctype="text/plain"
+                            onsubmit="return validateForm()">
+                            <table class="form-style">
+                                <tr>
+                                    <td>
+                                        <label>
+                                            Votre nom
+                                            <span class="required">*</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" class="long"/>
+                                        <span class="error" id="errorname"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>
+                                            Votre adresse e-mail
+                                            <span class="required">*</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="email" name="email" class="long"/>
+                                        <span class="error" id="erroremail"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>
+                                            Message
+                                            <span class="required">*</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <textarea name="message" class="long field-textarea"></textarea>
+                                        <span class="error" id="errormsg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="Envoyer">
+                                        <input type="reset" value="Reinitialiser">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <h1>Contact</h1>
+                        <p>N'hésitez pas à me contacter à l'adresse suivante:
+                            <a class="mail" href="mailto:yimoullas@gmail.com">
+                                yimoullas@gmail.com
+                            </a>
+                        </p>
+                        <p>&copy; yasmineIMOULLAS</p>
+                    </center>
+                    <script> 
+                        function validateForm()                                    
+                 { 
+                     var name = document.forms["myForm"]["name"];               
+                     var email = document.forms["myForm"]["email"];    
+                     var message = document.forms["myForm"]["message"];   
+                    
+                     if (name.value == "")                                  
+                     { 
+                         document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
+                         name.focus(); 
+                         return false; 
+                     }else{
+                         document.getElementById('errorname').innerHTML="";  
+                     }
+                        
+                     if (email.value == "")                                   
+                     { 
+                         document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+                         email.focus(); 
+                         return false; 
+                     }else{
+                         document.getElementById('erroremail').innerHTML="";  
+                     }
+                    
+                    
+                     if (message.value == "")                           
+                     {
+                         document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
+                         message.focus(); 
+                         return false; 
+                     }else{
+                         document.getElementById('errormsg').innerHTML="";  
+                     }
+                    
+                     return true; 
+                 }
+                       </script>
+                </footer>
+            </body>
+
+        </html>
